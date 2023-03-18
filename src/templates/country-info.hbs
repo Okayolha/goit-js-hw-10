@@ -1,0 +1,21 @@
+<div class='country-info-box'>
+  <img
+    class='country-info__icon'
+    src='{{flags.svg}}'
+    alt='{{name.official}}'
+    width='50'
+  />
+  <h2 class='title'>{{name.official}}</h2>
+
+  <p class='country-info__description'><span>Capital:</span>
+    {{capital}}</p>
+  <p class='country-info__description'><span>Population:</span>
+    {{population}}</p>
+
+  <p class='country-info__description'><span>Languages:</span>
+    {{#each languages}}
+      {{this}}
+    {{/each}}
+  </p>
+
+</div>
